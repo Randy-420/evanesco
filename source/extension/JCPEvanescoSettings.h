@@ -14,8 +14,14 @@
 
 -(BOOL)hideDock;
 
+-(BOOL)dockSearchEnabled;
+
 -(CGFloat)fadeAmount;
 
 -(int)timeDelay;
+
+-(int)dockSearchTimeDelay;
+
+-(BOOL)hideDockSearch;
 
 @end

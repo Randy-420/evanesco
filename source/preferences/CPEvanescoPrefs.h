@@ -24,6 +24,7 @@
 #define switchCellWithName(name) [PSSpecifier preferenceSpecifierNamed:name target:self set:@selector(setPreferenceValue:specifier:) get:@selector(readPreferenceValue:) detail:NULL cell:PSSwitchCell edit:Nil]
 #define textCellWithName(name) [PSSpecifier preferenceSpecifierNamed:name target:self set:NULL get:NULL detail:NULL cell:PSStaticTextCell edit:Nil]
 
+#define setId(id) [specifier setProperty:id forKey:@"id"]
 #define setClassForSpec(className) [specifier setProperty:className forKey:@"cellClass"]
 #define setDefaultForSpec(sDefault) [specifier setProperty:sDefault forKey:@"default"]
 #define setKeyForSpec(key) [specifier setProperty:key forKey:@"key"]

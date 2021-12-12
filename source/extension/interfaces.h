@@ -59,10 +59,13 @@
 
 @interface SBRootFolderView : NSObject
 @property (nonatomic, readonly) SBDockView *dockView;
+
+
 -(void)setPageControlHidden:(BOOL)hidden;
 @end
 
 @interface SBIconListView : UIView
+@property (assign,getter=isEditing,nonatomic) BOOL editing;
 -(NSArray *)icons;
 -(SBIconViewMap *)viewMap;
 -(void)layoutIconsNow;
@@ -81,7 +84,9 @@
 
 @interface SBFolderController : SBNestingViewController
 @property (nonatomic,readonly) SBIconListView * currentIconListView; 
-@property (nonatomic,readonly) SBIconListView * dockListView; 
+@property (nonatomic,readonly) SBIconListView * dockListView;
+@property (nonatomic,readonly) SBHomeScreenView * SBHS;
+
 -(void)setPageControlHidden:(BOOL)arg1 ;
 @end
 

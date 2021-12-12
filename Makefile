@@ -1,6 +1,7 @@
 TARGET = ::7.0
 FINALPACKAGE = 1
 
+SUBPROJECTS += source/evanescocc
 SUBPROJECTS += source/extension
 SUBPROJECTS += source/preferences
 

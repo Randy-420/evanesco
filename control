@@ -1,8 +1,8 @@
 Package: com.cpdigitaldarkroom.itsevanesco
 Name: Evanesco!
-Conflicts: com.cpdigitaldarkroom.evanesco, com.1conan.evanescoxi
+Conflicts: com.cpdigitaldarkroom.evanesco, com.1conan.evanescoxi, com.randy420.evanescocc
 Depends: mobilesubstrate
-Version: 2021.11
+Version: 2021.12
 Architecture: iphoneos-arm
 Description: Clear Your Homescreen After Inactivity
 Maintainer: CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>
