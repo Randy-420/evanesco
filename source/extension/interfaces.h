@@ -85,7 +85,7 @@
 @interface SBFolderController : SBNestingViewController
 @property (nonatomic,readonly) SBIconListView * currentIconListView; 
 @property (nonatomic,readonly) SBIconListView * dockListView;
-@property (nonatomic,readonly) SBHomeScreenView * SBHS;
+//@property (nonatomic,readonly) SBHomeScreenView * SBHS;
 
 -(void)setPageControlHidden:(BOOL)arg1 ;
 @end
