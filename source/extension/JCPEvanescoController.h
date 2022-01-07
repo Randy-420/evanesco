@@ -6,6 +6,10 @@
 //  Copyright © 2020 CP Digital Darkroom. All rights reserved.
 //
 
+@interface SBHomeScreenView : UIView
+
+@end
+
 @interface JCPEvanescoController: NSObject
 
 @property (assign, nonatomic) BOOL shouldPreventDockFloatUp;
