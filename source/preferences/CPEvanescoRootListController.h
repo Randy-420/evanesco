@@ -7,6 +7,7 @@
 //
 
 #import <Preferences/PSListController.h>
+#import <rootless.h>
 
 @interface PSListController (iOS12Plus)
 -(BOOL)containsSpecifier:(PSSpecifier *)arg1;
@@ -31,7 +32,7 @@
 @end
 
 static BOOL getBool(NSString *pkey, BOOL defaultValue) {
-	NSDictionary *Dict = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.cpdigitaldarkroom.itsevanesco.plist"];
+	NSDictionary *Dict = [NSDictionary dictionaryWithContentsOfFile:ROOT_PATH_NS(@"/var/mobile/Library/Preferences/com.cpdigitaldarkroom.itsevanesco.plist")];
 
 	return [Dict objectForKey:pkey] ? [[Dict objectForKey:pkey] boolValue] : defaultValue;
 }

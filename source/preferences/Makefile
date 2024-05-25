@@ -1,4 +1,9 @@
-TARGET = :clang:11.2:7.0
+ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
+	TARGET = iphone:14.5:14.0
+else
+	TARGET = iphone:clang:14.5:7.0
+endif
+
 ARCHS = arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk
@@ -9,7 +14,7 @@ Evanesco_FILES = $(wildcard *.m)
 Evanesco_INSTALL_PATH = /Library/PreferenceBundles
 Evanesco_FRAMEWORKS = UIKit
 Evanesco_PRIVATE_FRAMEWORKS = Preferences
-Evanesco_CFLAGS = -fobjc-arc
+Evanesco_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 

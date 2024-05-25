@@ -5,6 +5,8 @@
 //  Created by Juan Carlos Perez on 01/15/20.
 //  Copyright © 2020 CP Digital Darkroom. All rights reserved.
 //
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define kPrefDomain "com.cpdigitaldarkroom.itsevanesco"
 
@@ -57,7 +59,7 @@
 -(SBIconView *)mappedIconViewForIcon:(SBIcon *)icon;
 @end
 
-@interface SBRootFolderView : NSObject
+@interface SBRootFolderView : UIView
 @property (nonatomic, readonly) SBDockView *dockView;
 
 
@@ -91,7 +93,7 @@
 @end
 
 @interface SBRootFolderController: SBFolderController
-@property (nonatomic, readonly) SBRootFolderView *contentView;
+- (SBRootFolderView *)contentView;
 
 -(id)beginModifyingDockOffscreenFractionForReason:(id)arg1;
 

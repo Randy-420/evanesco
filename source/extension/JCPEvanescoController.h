@@ -10,8 +10,9 @@
 
 @end
 
-@interface JCPEvanescoController: NSObject
-
+@interface JCPEvanescoController: NSObject{
+	NSString *viewDump;
+}
 @property (assign, nonatomic) BOOL shouldPreventDockFloatUp;
 
 -(void)disableActivation;
@@ -23,6 +24,5 @@
 
 // remove timers and clear actively applied spell
 -(void)tearDown;
-
 @end
 
