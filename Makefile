@@ -1,5 +1,6 @@
 FINALPACKAGE = 1
 TARGET = iphone:clang:14.5:7.0
+PACKAGE_VERSION= 2024.05.25
 
 #export THEOS_PACKAGE_SCHEME = rootless
 
@@ -13,6 +14,8 @@ else ifeq ($(THEOS_PACKAGE_SCHEME), jailed)
 else
 	THEOS_PACKAGE_DIR = DEBs
 endif
+
+export PKG_VERSION=$(PACKAGE_VERSION)
 
 SUBPROJECTS += source/evanescocc
 SUBPROJECTS += source/extension

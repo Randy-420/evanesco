@@ -14,7 +14,7 @@ Evanesco_FILES = $(wildcard *.m)
 Evanesco_INSTALL_PATH = /Library/PreferenceBundles
 Evanesco_FRAMEWORKS = UIKit
 Evanesco_PRIVATE_FRAMEWORKS = Preferences
-Evanesco_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
+Evanesco_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -DVERSION="@\"$(PKG_VERSION)\""
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
